@@ -1,0 +1,50 @@
+/* General reset for margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for h1 */
+h1 {
+    font-family: cursive;
+    text-align: center;
+}
+
+/* Grid container styling */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 25px;
+    justify-content: center;
+    gap: 5%;
+}
+
+/* Responsive styling for small screens */
+@media only screen and (max-width: 480px) {
+    body {
+        background-color: black;
+    }
+
+    h1 {
+        color: white;
+        font-size: 0.9rem;
+        font-family: cursive;
+        text-align: center;
+        letter-spacing: 1px;
+        padding-top: 10px; /* Fixed typo from '10x' to '10px' */
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 100%; /* Fixed width to be responsive */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 5%;
+    }
+}
